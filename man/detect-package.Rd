@@ -1,0 +1,28 @@
+\name{detect-package}
+\alias{detect-package}
+\alias{detect}
+\docType{package}
+\title{
+Analyzing Wildlife Data with Detection Error
+}
+\description{
+  The package implements models to analyze
+  site occupancy and count data models with detection error.
+  Development was funded by the Alberta Biodiversity Monitoring Institute
+  \url{http://www.abmi.ca/}.
+}
+\details{
+\code{\link{svocc}}: single visit occupancy model.
+}
+\author{
+Peter Solymos, Monica Moreno, Subhash R Lele
+
+Maintainer: Peter Solymos <solymos@ualberta.ca>
+}
+\references{
+Lele, S.R., Moreno, M. and Bayne, E. (2011) 
+Dealing with detection error in site occupancy surveys: 
+What can we do with a single survey? 
+\emph{Journal of Plant Ecology} (in press)
+}
+\keyword{ package }

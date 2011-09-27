@@ -1,0 +1,42 @@
+## exported svocc functions
+export("svocc", "svocc.fit", "svocc.step")
+## exported helper functions
+export("jags.engine",
+    "bootstrap", "extractMLE", "extractBOOT")
+## model selection helper functions
+export("AUC", "rocplot")
+
+## import from other packages
+importFrom("stats",
+    "case.names", "drop.scope", "drop1",
+    "logLik", "model.matrix", "model.frame", "terms", "simulate",
+    "update.formula", "update", "vcov", "variable.names")
+
+## methods for svocc class
+S3method("print", "svocc")
+S3method("drop1", "svocc")
+S3method("coef", "svocc")
+S3method("print", "summary.svocc")
+S3method("summary", "svocc")
+S3method("vcov", "svocc")
+S3method("simulate", "svocc")
+S3method("AUC", "svocc")
+S3method("rocplot", "svocc")
+S3method("coef", "summary.svocc")
+S3method("extractBOOT", "svocc")
+S3method("extractMLE", "svocc")
+S3method("confint", "svocc")
+S3method("model.matrix", "svocc")
+S3method("predict", "svocc")
+
+## methods for svisit parent class
+S3method("bootstrap", "svisit")
+S3method("case.names", "svisit")
+S3method("drop.scope", "svisit")
+S3method("logLik", "svisit")
+S3method("terms", "svisit")
+S3method("update.formula", "svisit")
+S3method("update", "svisit")
+S3method("variable.names", "svisit")
+S3method("extractAIC", "svisit")
+
