@@ -1,8 +1,11 @@
 ## exported svocc functions
 export("svocc", "svocc.fit", "svocc.step")
+## exported svabu functions
+export("svabu", "svabu.fit", "svabu.step", "zif")
 ## exported helper functions
 export("jags.engine",
-    "bootstrap", "extractMLE", "extractBOOT")
+    "bootstrap", "extractMLE", "extractBOOT",
+    "predictMCMC", "is.present")
 ## model selection helper functions
 export("AUC", "rocplot")
 
@@ -10,7 +13,8 @@ export("AUC", "rocplot")
 importFrom("stats",
     "case.names", "drop.scope", "drop1",
     "logLik", "model.matrix", "model.frame", "terms", "simulate",
-    "update.formula", "update", "vcov", "variable.names")
+    "update.formula", "update", "vcov", "variable.names", 
+    "AIC", "BIC")
 
 ## methods for svocc class
 S3method("print", "svocc")
@@ -29,7 +33,25 @@ S3method("confint", "svocc")
 S3method("model.matrix", "svocc")
 S3method("predict", "svocc")
 
+## methods for svabu class
+S3method("plot", "svabu")
+S3method("drop1", "svabu")
+S3method("coef", "svabu")
+S3method("print", "svabu")
+S3method("print", "summary.svabu")
+S3method("summary", "svabu")
+S3method("vcov", "svabu")
+S3method("simulate", "svabu")
+S3method("coef", "summary.svabu")
+S3method("confint", "svabu")
+S3method("extractBOOT", "svabu")
+S3method("model.matrix", "svabu")
+S3method("predict", "svabu")
+S3method("predictMCMC", "svabu")
+S3method("fitted", "svabu")
+
 ## methods for svisit parent class
+S3method("is.present", "svisit")
 S3method("bootstrap", "svisit")
 S3method("case.names", "svisit")
 S3method("drop.scope", "svisit")

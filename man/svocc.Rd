@@ -10,21 +10,14 @@ ZI Binomial model with single visit
 ZI Binomial model with single visit
 }
 \usage{
-svocc(formula, data, link.sta = "cloglog", 
-  link.det = "logit", penalized = FALSE, 
-  method = c("optim", "dc"), inits, 
-  model = TRUE, x = FALSE, cl = NULL, ...)
-
-svocc.fit(Y, X, Z, link.sta = "cloglog", 
-  link.det = "logit", penalized = FALSE, 
-  auc = FALSE, method = c("optim", "dc"), 
-  inits, cl = NULL, ...)
-
+svocc(formula, data, link.sta = "cloglog", link.det = "logit", penalized = FALSE, 
+method = c("optim", "dc"), inits, 
+model = TRUE, x = FALSE, cl = NULL, ...)
+svocc.fit(Y, X, Z, link.sta = "cloglog", link.det = "logit", penalized = FALSE, 
+auc = FALSE, method = c("optim", "dc"), inits, cl = NULL, ...)
 extractMLE(object, ...)
-
 svocc.step(object, model, trace = 1, steps = 1000, 
-  criter = c("AIC", "BIC", "cAUC"), test = FALSE, 
-  k = 2, control, ...)
+criter = c("AIC", "BIC", "cAUC"), test = FALSE, k = 2, control, ...)
 }
 \arguments{
   \item{formula}{
@@ -104,6 +97,11 @@ What can we do with a single survey?
 Moreno, M. and S.R. Lele (2010) 
 Improved estimation of site occupancy using penalized likelihood. 
 \emph{Ecology} 91, 341--346.
+
+Lele, S. R., Moreno, M. and Bayne, E. 2011. Dealing with detection error in site
+occupancy surveys: What can we do with a single survey? Alberta Biodiversity Monitoring Institute, Alberta,
+Canada. Technical Report No. ABMI-20060, August 24, 2011. Available at: 
+\href{http://www.abmi.ca/FileDownloadServlet?filename=20060_ABMI_2011-08-24__Single_Visit_Occupancy.pdf&dir=REPORTS_UPLOAD}{http://www.abmi.ca}
 }
 \author{
 Peter Solymos and Monica Moreno
@@ -155,6 +153,7 @@ summary(m00$occurrence.probabilities)
 ## probability of detection (delta)
 summary(m00$detection.probabilities)
 
+\dontrun{
 ## model selection
 m02 <- svocc(W ~ x1 | x3 + x4, datocc)
 m03 <- drop1(m02, model="det")
@@ -184,11 +183,9 @@ confint(m06, type="boot") ## quantile based
 ## parametric bootstrap
 ## sthis is how observations are simulated
 head(simulate(m01, 5))
-\dontrun{
 m07 <- bootstrap(m01, B=25, type="param")
 extractBOOT(m07)
 summary(m07)
-}
 
 data(oven)
 ovenc <- oven
@@ -204,6 +201,7 @@ BIC(moven, moven2)
 AUC(moven, moven2)
 rocplot(moven)
 rocplot(moven2, col=2, add=TRUE)
+}
 }
 \keyword{ htest }
 \keyword{ models }

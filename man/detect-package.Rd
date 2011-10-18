@@ -13,6 +13,8 @@ Analyzing Wildlife Data with Detection Error
 }
 \details{
 \code{\link{svocc}}: single visit occupancy model.
+
+\code{\link{svabu}}: single visit abundance model.
 }
 \author{
 Peter Solymos, Monica Moreno, Subhash R Lele
@@ -26,3 +28,6 @@ What can we do with a single survey?
 \emph{Journal of Plant Ecology} (in press)
 }
 \keyword{ package }
+\examples{
+## how to open tutorial/vignette ???
+}
