@@ -1,4 +1,4 @@
-bf5adf705c3f427a740d052c5355c83c *DESCRIPTION
+1237a2c797a41225bc3825fb19bef0bb *DESCRIPTION
 adb9fcdeb7a823ca3b3cd14e22da903c *NAMESPACE
 c399f00e993673fcb626ad327de48ca1 *R/AUC.R
 3b1bc891fe5d0361ae830dc01741b340 *R/AUC.svocc.R
@@ -62,13 +62,13 @@ ac9134195a903a74e3a682214aff2974 *data/databu.rda
 b7cd4bee9b54b8d89e4156a0f45da854 *data/datocc.rda
 32a6ce61300304581480dfcc9bd879e1 *data/oven.rda
 f65bbf3f3a784599521675cf6134dbac *inst/COPYING
-48138a689aea85768e79ebc5ed5c7468 *inst/ChangeLog
+57e9349e6b1f5596fabb2bb7e7858611 *inst/ChangeLog
 dc6042914cffbfc52159e4e5226eff24 *man/AUC.Rd
 69e595df12b37d792179ed9137f8ebda *man/bootstrap.Rd
 cf027ff0752937c35999357e966ab1f5 *man/databu.Rd
-a769ad0bc9b42cd494e92eb875d867c8 *man/datocc.Rd
-7afe1f893f7e9a9a725d8ab0519ec1ac *man/detect-package.Rd
+04b5a752e0e09755fce329eeed426d8d *man/datocc.Rd
+b72693da2425be316ea046dbc3929d01 *man/detect-package.Rd
 69eac69805a374c64ad97f983e1becde *man/jags.engine.Rd
 9378d0d7a0bf5e760e7e8f327bdfa3ae *man/oven.Rd
-bfad01f1bb471b96dc3032ec55b47933 *man/svabu.Rd
-54477b7e75074bd69b2c37ca2dea695a *man/svocc.Rd
+49ae74ea5e51abe6ba90d376e45bb354 *man/svabu.Rd
+3350cfedd1afe1ab7bb109fb0be30082 *man/svocc.Rd
