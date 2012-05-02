@@ -96,16 +96,23 @@ continuous (i.e. non discrete/categorical) covariate.
 This is the necessary condition for the single-visit
 method to be valid and parameters to be identifiable.
 See References for more detailed description.
+
+The Binomial-Poisson model is the single visit special case
+of the \emph{N}-mixture model proposed by Royle (2004).
 }
 \value{
 An object of class 'svabu'.
 }
 \references{
+Royle, J. A. 2004.
+\emph{N}-Mixture Models for Estimating Population Size from Spatially Replicated Counts.
+\emph{Biometrics}, \bold{60(1)}, 108--115.
+
 Solymos, P., Lele, S. R and Bayne, E. 2011.
 Conditional likelihood approach for analyzing single visit
 abundance survey data in the presence of zero inflation and
 detection error. 
-\emph{Environmetrics} (in press)
+\emph{Environmetrics} \bold{23}, 197--205.
 
 Solymos, P., Lele, S. R and Bayne, E. 2011. Abundance estimation in the presence of zero
 inflation and detection error using single visit data. Alberta Biodiversity Monitoring Institute, Alberta, Canada.
