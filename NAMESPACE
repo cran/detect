@@ -2,12 +2,15 @@
 export("svocc", "svocc.fit", "svocc.step")
 ## exported svabu functions
 export("svabu", "svabu.fit", "svabu.step", "zif")
+## exported cmulti functions
+export("cmulti", "cmulti.fit", "cmulti2.fit")
 ## exported helper functions
-export("jags.engine",
-    "bootstrap", "extractMLE", "extractBOOT",
+export("bootstrap", "extractMLE", "extractBOOT",
     "predictMCMC", "is.present")
 ## model selection helper functions
 export("AUC", "rocplot")
+## QPAD
+export(load_BAM_QPAD, hbootindex, convertEDR)
 
 ## import from other packages
 importFrom("stats",
@@ -61,4 +64,12 @@ S3method("update.formula", "svisit")
 S3method("update", "svisit")
 S3method("variable.names", "svisit")
 S3method("extractAIC", "svisit")
+
+## cmulti methods
+S3method("print", "cmulti")
+S3method("vcov", "cmulti")
+S3method("summary", "cmulti")
+S3method("print", "summary.cmulti")
+S3method("logLik", "cmulti")
+S3method("fitted", "cmulti")
 

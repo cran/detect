@@ -1,5 +1,22 @@
 detect package version history
 
+Version 0.3-0, July 29, 2013
+    * jags.engine removed, replaced by dcmle dependency.
+    * dFormula and checkDesign added with Formula dependency,
+      this will replace the old svisitFormula interface
+      to allow handling of more complex designs.
+    * logdmultinom: simplified version of dmultinom.
+    * bymethod: collapses (pools) observations by methodology.
+    * cmulti: new function for conditional multinomial estimation.
+    * load_BAM_QPAD: new function to load BAM QPAD parameter
+      estimates and support functions.
+    * hbootindex: new function to sample indices with replacement
+      for grouped/stratified data.
+    * fitted.cmulti added: get estimated singing rate or distance model
+      parameter (not available for type="mix")
+    * predict methods: response (lhs) is dropped from formula
+      when newdata is provided.
+
 Version 0.2-2, May 2, 2012
     * inst/COPYING file removed (standard license).
 

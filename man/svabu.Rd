@@ -12,16 +12,18 @@ Binomial-Poisson and Binomial-ZIP models with single visit
 Binomial-Poisson and Binomial-ZIP models with single visit
 }
 \usage{
-svabu(formula, data, zeroinfl = TRUE, area = 1, N.max = NULL, inits, 
-link.det = "logit", link.zif = "logit", 
-model = TRUE, x = FALSE, ...)
-svabu.fit(Y, X, Z, Q = NULL, zeroinfl = TRUE, area = 1, N.max = NULL, inits, 
-link.det = "logit", link.zif = "logit", ...)
+svabu(formula, data, zeroinfl = TRUE, area = 1, N.max = NULL, 
+    inits, link.det = "logit", link.zif = "logit", 
+    model = TRUE, x = FALSE, ...)
+
+svabu.fit(Y, X, Z, Q = NULL, zeroinfl = TRUE, area = 1, N.max = NULL, 
+    inits, link.det = "logit", link.zif = "logit", ...)
+
 zif(x)
 is.present(object, ...)
 predictMCMC(object, ...)
 svabu.step(object, model, trace = 1, steps = 1000, 
-criter = c("AIC", "BIC"), test = FALSE, k = 2, control, ...)
+    criter = c("AIC", "BIC"), test = FALSE, k = 2, control, ...)
 }
 \arguments{
   \item{formula}{
@@ -76,7 +78,7 @@ max number of steps
 criterion to be minimized (cAUC=1-AUC)
 }
   \item{test}{
-lofical, if decrease in deviance should be tested
+logical, if decrease in deviance should be tested
 }
   \item{k}{
 penalty to be used with AIC
@@ -127,27 +129,28 @@ data(databu)
 
 ## fit BZIP and BP models
 m00 <- svabu(Y ~ x1 + x5 | x2 + x5, databu[1:200,])
-m01 <- svabu(Y ~ x1 + x5 | x2 + x5, databu[1:200,], zeroinfl=FALSE)
-## compare estimates (note, zero inflation is on the logit scale!)
-cbind(truth=c(2,-0.8,0.5, 1,2,-0.5, plogis(0.3)),
-"B-ZIP"=coef(m00), "B-P"=c(coef(m01), NA))
 
 ## print method
 m00
-m01
 ## summary: CMLE
 summary(m00)
-summary(m01)
 ## coef
 coef(m00)
 coef(m00, model="sta") ## state (abundance)
 coef(m00, model="det") ## detection
 coef(m00, model="zif") ## zero inflation (this is part of the 'true state'!)
+
+\dontrun{
+## Diagnostics and model comparison
+
+m01 <- svabu(Y ~ x1 + x5 | x2 + x5, databu[1:200,], zeroinfl=FALSE)
+## compare estimates (note, zero inflation is on the logit scale!)
+cbind(truth=c(2,-0.8,0.5, 1,2,-0.5, plogis(0.3)),
+"B-ZIP"=coef(m00), "B-P"=c(coef(m01), NA))
+
 ## fitted
 plot(fitted(m00), fitted(m01))
 abline(0,1)
-
-## Diagnostics and model comparison
 
 ## compare models
 AIC(m00, m01)
@@ -160,7 +163,6 @@ plot(m01)
 
 ## Bootstrap
 
-\dontrun{
 ## non parametric bootstrap
 ## - initial values are the estimates
 m02 <- bootstrap(m00, B=25)
@@ -205,7 +207,7 @@ m08$control ## but original optim method is retained during model selection and 
 options("detect.optim.method"="Nelder-Mead")
 m09 <- svabu(Y ~ x1 + x5 | x2 + x5, databu[1:100,], inits=coef(m08))
 
-## OVenbirds dataset
+## Ovenbirds dataset
 
 data(oven)
 ovenc <- oven
