@@ -37,7 +37,6 @@ function (object, scope, model, criter = c("AIC", "BIC", "cAUC"), test = FALSE, 
     asgn <- attr(x, "assign")
     tl <- attr(object$terms[[model]], "term.labels")
     if (missing(scope)) {
-#        scope <- detect:::drop.scope.svisit(object, model=model)
         scope <- drop.scope.svisit(object, model=model)
     } else {
         if (!is.character(scope)) {
@@ -133,7 +132,13 @@ function (object, scope, model, criter = c("AIC", "BIC", "cAUC"), test = FALSE, 
         nas <- !is.na(dev)
         LRT <- "unscaled dev." # "LRT"
         aod[, LRT] <- dev
-        dev[nas] <- stats:::safe_pchisq(dev[nas], aod$Df[nas], lower.tail = FALSE)
+
+        Safe_pchisq <- function (q, df, ...) {
+            df[df <= 0] <- NA
+            pchisq(q = q, df = df, ...)
+        }
+
+        dev[nas] <- Safe_pchisq(dev[nas], aod$Df[nas], lower.tail = FALSE)
         aod[, "Pr(Chi)"] <- dev
     }
     ## Exclude (make it NA) lines where we should keep covariates
