@@ -1,28 +1,31 @@
 \name{svabu}
 \alias{svabu}
 \alias{svabu.fit}
+\alias{svabu_nb.fit}
 \alias{zif}
 \alias{is.present}
 \alias{predictMCMC}
 \alias{svabu.step}
 \title{
-Binomial-Poisson and Binomial-ZIP models with single visit
+Single visit N-mixture abundance models
 }
 \description{
-Binomial-Poisson and Binomial-ZIP models with single visit
+Binomial-Poisson, Binomial-NegBin, Binomial-ZIP, and BinomialZINB models with single visit.
 }
 \usage{
-svabu(formula, data, zeroinfl = TRUE, area = 1, N.max = NULL, 
-    inits, link.det = "logit", link.zif = "logit", 
-    model = TRUE, x = FALSE, ...)
+svabu(formula, data, zeroinfl = TRUE, area = 1, N.max = NULL,
+    inits, link.det = "logit", link.zif = "logit",
+    model = TRUE, x = FALSE, distr = c("P", "NB"), ...)
 
-svabu.fit(Y, X, Z, Q = NULL, zeroinfl = TRUE, area = 1, N.max = NULL, 
+svabu.fit(Y, X, Z, Q = NULL, zeroinfl = TRUE, area = 1, N.max = NULL,
+    inits, link.det = "logit", link.zif = "logit", ...)
+svabu_nb.fit(Y, X, Z, Q = NULL, zeroinfl = TRUE, area = 1, N.max = NULL,
     inits, link.det = "logit", link.zif = "logit", ...)
 
 zif(x)
 is.present(object, ...)
 predictMCMC(object, ...)
-svabu.step(object, model, trace = 1, steps = 1000, 
+svabu.step(object, model, trace = 1, steps = 1000,
     criter = c("AIC", "BIC"), test = FALSE, k = 2, control, ...)
 }
 \arguments{
@@ -35,7 +38,7 @@ the nonzero count data part (\code{x1}) and the zero inflation
 component (\code{zif(x2)}) using the \code{zif} special.
 }
   \item{Y, X, Z, Q}{
-vector of observation, design matrix for abundance model, design matrix for detection 
+vector of observation, design matrix for abundance model, design matrix for detection
 and design matrix for zero inflation model
 }
   \item{data}{
@@ -61,7 +64,7 @@ a logical value indicating whether model frame should be included as a component
 or true state or detection model
 }
   \item{x}{
-logical values indicating whether the response vector and model matrix used in the 
+logical values indicating whether the response vector and model matrix used in the
 fitting process should be returned as components of the returned value.
 For the function \code{zif} it is any object to be returned.
 }
@@ -86,6 +89,10 @@ penalty to be used with AIC
   \item{control}{
 controls for optimization, if missing taken from object
 }
+  \item{distr}{
+character, abundance distribution: \code{"P"} for Poisson,
+\code{"NB"} for Negative Binomial.
+}
   \item{\dots}{
 other arguments passed to the functions
 }
@@ -100,7 +107,8 @@ method to be valid and parameters to be identifiable.
 See References for more detailed description.
 
 The Binomial-Poisson model is the single visit special case
-of the \emph{N}-mixture model proposed by Royle (2004).
+of the \emph{N}-mixture model proposed by Royle (2004)
+and explained in Solymos et a. (2012) and Solymos and Lele (2016).
 }
 \value{
 An object of class 'svabu'.
@@ -110,16 +118,16 @@ Royle, J. A. 2004.
 \emph{N}-Mixture Models for Estimating Population Size from Spatially Replicated Counts.
 \emph{Biometrics}, \bold{60(1)}, 108--115.
 
-Solymos, P., Lele, S. R and Bayne, E. 2011.
+Solymos, P., Lele, S. R. and Bayne, E. 2012.
 Conditional likelihood approach for analyzing single visit
 abundance survey data in the presence of zero inflation and
-detection error. 
+detection error.
 \emph{Environmetrics}, \bold{23}, 197--205.
 
-Solymos, P., Lele, S. R and Bayne, E. 2011. Abundance estimation in the presence of zero
-inflation and detection error using single visit data. Alberta Biodiversity Monitoring Institute, Alberta, Canada.
-Technical Report No. ABMI-20061, August 24, 2011. Available at: 
-\href{http://www.abmi.ca/FileDownloadServlet?filename=20061_ABMI_2011-08-24_Single_Visit_Abundance.pdf&dir=REPORTS_UPLOAD}{http://www.abmi.ca}
+Solymos, P., Lele, S. R. 2016.
+Revisiting resource selection probability functions and single-visit methods:
+clarification and extensions.
+\emph{Methods in Ecology and Evolution}, \bold{7}, 196--205.
 }
 \author{
 Peter Solymos and Subhash Lele
