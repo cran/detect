@@ -4,6 +4,8 @@ importFrom("pbapply", "pblapply", "pbsapply")
 importFrom("stats4", "mle")
 #importFrom("dclone", "dcsd")
 #importFrom("dcmle", "makeDcFit", "gelman.diag")
+
+importFrom("Matrix", "nearPD")
 importFrom("graphics", "abline", "legend", "lines", "par", "plot",
     "points", "polygon")
 importFrom("stats", ".getXlevels", "aggregate", "as.formula",
@@ -84,4 +86,7 @@ S3method("summary", "cmulti")
 S3method("print", "summary.cmulti")
 S3method("logLik", "cmulti")
 S3method("fitted", "cmulti")
+S3method("model.frame", "cmulti")
+S3method("model.matrix", "cmulti")
+S3method("predict", "cmulti")
 
