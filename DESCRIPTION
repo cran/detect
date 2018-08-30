@@ -1,8 +1,8 @@
 Package: detect
 Type: Package
 Title: Analyzing Wildlife Data with Detection Error
-Version: 0.4-1
-Date: 2018-01-30
+Version: 0.4-2
+Date: 2018-08-29
 Author: Peter Solymos [cre, aut], Monica Moreno [aut], Subhash R. Lele [aut]
 Maintainer: Peter Solymos <solymos@ualberta.ca>
 Depends: R (>= 2.13.0), Formula, stats4, pbapply
@@ -20,6 +20,6 @@ BugReports: https://github.com/psolymos/detect/issues
 LazyLoad: yes
 LazyData: true
 NeedsCompilation: no
-Packaged: 2018-01-31 05:08:40 UTC; root
+Packaged: 2018-08-30 05:09:50 UTC; root
 Repository: CRAN
-Date/Publication: 2018-01-31 05:33:40 UTC
+Date/Publication: 2018-08-30 05:44:25 UTC

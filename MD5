@@ -1,4 +1,4 @@
-d802ddd02a9a9fa9d385ffc8b8063dee *DESCRIPTION
+92b9c727d4f6a09336e4c135fe62157d *DESCRIPTION
 0039420b9172472f0d6bbd98a4c1dba0 *NAMESPACE
 807018546fe6993b2269d9ab155ca99e *R/AUC.R
 8ed60b55f56a15d2b344fb7a38360307 *R/AUC.svocc.R
@@ -7,7 +7,7 @@ d98068141b9e93392a73f39947d2cbf3 *R/bootstrap.svisit.R
 9a4cfe5ad3a16ab65528bf4dbd9e2e90 *R/bymethod.R
 89768ed05fdab7f80f5f1758c6a9b33d *R/case.names.svisit.R
 b2ce354b34ced65d982381d49dc46144 *R/checkDesign.R
-95ff3281fa5f3e2afdcfe2b2f797cbfb *R/cmulti.R
+5846ee55f0dee19f60d614b8439c5b69 *R/cmulti.R
 71a1af7f44640006a8b8d1094fa2ab45 *R/cmulti.fit.R
 9e24e7d8512011133c362d1d3af501c9 *R/cmulti.fit0.R
 fd9827016bd8520b9d5a52197617129e *R/cmulti2.fit.R
@@ -84,11 +84,11 @@ b7cd4bee9b54b8d89e4156a0f45da854 *data/datocc.rda
 32a6ce61300304581480dfcc9bd879e1 *data/oven.rda
 352a1b5e9861bc4b00babd3330ad950f *man/AUC.Rd
 ee5cdde61f1cad27ff97dc8e58b35f9e *man/bootstrap.Rd
-1a812268d13c86a072b493b341b2db96 *man/cmulti.Rd
+da134b7d331c146210a8f8efe7a7fb79 *man/cmulti.Rd
 5dd87cf6ea6cb44274bed0cf4c6ffd2d *man/convertEDR.Rd
 981b6f15d48c965e036fa5ee2fc5c456 *man/databu.Rd
 82f7fb7c27ee60c2f96a7afebffcad7d *man/datocc.Rd
-fc2be064908d3eb68bbd2305a762ebdd *man/detect-package.Rd
+33d654f549b0be033a6fe49907c27a18 *man/detect-package.Rd
 b94c799f65d48d1ddabe4cc6e02aa22e *man/hbootindex.Rd
 deec6d32874054f4bf3d4121f49c91f1 *man/internals.Rd
 646ea3848597b6423398057027189b81 *man/load_BAM_QPAD.Rd
