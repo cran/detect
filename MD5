@@ -1,4 +1,4 @@
-92b9c727d4f6a09336e4c135fe62157d *DESCRIPTION
+b2d182616363ad61bb6ff1a8e4c0e923 *DESCRIPTION
 0039420b9172472f0d6bbd98a4c1dba0 *NAMESPACE
 807018546fe6993b2269d9ab155ca99e *R/AUC.R
 8ed60b55f56a15d2b344fb7a38360307 *R/AUC.svocc.R
@@ -8,7 +8,7 @@ d98068141b9e93392a73f39947d2cbf3 *R/bootstrap.svisit.R
 89768ed05fdab7f80f5f1758c6a9b33d *R/case.names.svisit.R
 b2ce354b34ced65d982381d49dc46144 *R/checkDesign.R
 5846ee55f0dee19f60d614b8439c5b69 *R/cmulti.R
-71a1af7f44640006a8b8d1094fa2ab45 *R/cmulti.fit.R
+ed270ea0a3d42573e4418ee7e110892a *R/cmulti.fit.R
 9e24e7d8512011133c362d1d3af501c9 *R/cmulti.fit0.R
 fd9827016bd8520b9d5a52197617129e *R/cmulti2.fit.R
 ed283ebf655966ebccf3485dcc62f6f2 *R/coef.summary.svabu.R
@@ -27,7 +27,7 @@ f979cf25a39b81fe6612c4e3457aee97 *R/drop1.svocc.R
 621e981f263ce8b1d581af5a66c24842 *R/extractBOOT.svabu.R
 cdced4e69071214c654cbf2b462cc36c *R/extractBOOT.svocc.R
 c46eee2b2e673c08ed5ef2625338ca7d *R/extractMLE.R
-10b9543715a27d19a6ba94f43a5200e2 *R/extractMLE.svocc.R
+9df88307f821a41fb5e4a0b51c4f90aa *R/extractMLE.svocc.R
 a2d61ae341f3557bf4078693a5cc824d *R/fitted.cmulti.R
 bb108988dcd9b30a0873aa9def565dfd *R/fitted.svabu.R
 b6857cd861dc76d4e27e58539d3b801f *R/hbootindex.R
@@ -68,7 +68,7 @@ be64d17b300aa486e50bb1fb3def20ef *R/svabu.fit.R
 56d60d6d2b4ea134c66a8e18f8fc25d4 *R/svabu_nb.fit.R
 89cb018bc287574a8dcf67cc5a146366 *R/svisitFormula.R
 4eca9d452b72037d7bdef18d038bc799 *R/svocc.R
-ce2d1f4da6e6fff9ace3d56ed7085365 *R/svocc.fit.R
+adae29e200f36859acfe9494ea24c599 *R/svocc.fit.R
 aa97781c8c025e6453432b7091c2228b *R/svocc.step.R
 fcb3a0d637d7b269a098c100fc598da6 *R/terms.svisit.R
 9f58f4ba8f30b8675071a30212dae625 *R/update.formula.svisit.R
@@ -84,14 +84,15 @@ b7cd4bee9b54b8d89e4156a0f45da854 *data/datocc.rda
 32a6ce61300304581480dfcc9bd879e1 *data/oven.rda
 352a1b5e9861bc4b00babd3330ad950f *man/AUC.Rd
 ee5cdde61f1cad27ff97dc8e58b35f9e *man/bootstrap.Rd
-da134b7d331c146210a8f8efe7a7fb79 *man/cmulti.Rd
+6dd53513eea9f56e684bb1c5c7155c88 *man/cmulti.Rd
 5dd87cf6ea6cb44274bed0cf4c6ffd2d *man/convertEDR.Rd
 981b6f15d48c965e036fa5ee2fc5c456 *man/databu.Rd
 82f7fb7c27ee60c2f96a7afebffcad7d *man/datocc.Rd
-33d654f549b0be033a6fe49907c27a18 *man/detect-package.Rd
+2bee7dba90e204c7950914dcdca6d648 *man/detect-package.Rd
 b94c799f65d48d1ddabe4cc6e02aa22e *man/hbootindex.Rd
-deec6d32874054f4bf3d4121f49c91f1 *man/internals.Rd
+ca37b1add0f51023fa0b72fd12356a6d *man/internals.Rd
 646ea3848597b6423398057027189b81 *man/load_BAM_QPAD.Rd
 840d4a6ac275990b05a7b9329173a1ef *man/oven.Rd
 1c746924c07b3f7b52103120f79448ab *man/svabu.Rd
-29f5feac4694a3a779bd2daba1741702 *man/svocc.Rd
+e954efd7bdca853c0f7646842bc54449 *man/svocc.Rd
+0288a051d5661f21921979aefef29ddf *tests/tests.R

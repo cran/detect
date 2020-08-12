@@ -8,9 +8,10 @@ function(object, model = c("full", "sta", "det"), ...)
         vcv <- -.solvenear(object$results$mle$hessian)
     }
     if (object$method=="dc") {
-        cfs <- coef(object$results$mle)
-        ses <- dclone::dcsd(object$results$mle)
-        vcv <- vcov(object$results$mle)
+        requireNamespace("dcmle")
+        cfs <- dcmle::coef(object$results$mle)
+        ses <- dcmle::dcsd(object$results$mle)
+        vcv <- dcmle::vcov(object$results$mle)
     }
     cf <- coef(object, model)
     wi <- seq(along = object$coefficients$sta)
