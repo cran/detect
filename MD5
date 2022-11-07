@@ -1,4 +1,4 @@
-b2d182616363ad61bb6ff1a8e4c0e923 *DESCRIPTION
+7af04e6c63fda4c8f270454ba9fb5415 *DESCRIPTION
 0039420b9172472f0d6bbd98a4c1dba0 *NAMESPACE
 807018546fe6993b2269d9ab155ca99e *R/AUC.R
 8ed60b55f56a15d2b344fb7a38360307 *R/AUC.svocc.R
@@ -8,7 +8,7 @@ d98068141b9e93392a73f39947d2cbf3 *R/bootstrap.svisit.R
 89768ed05fdab7f80f5f1758c6a9b33d *R/case.names.svisit.R
 b2ce354b34ced65d982381d49dc46144 *R/checkDesign.R
 5846ee55f0dee19f60d614b8439c5b69 *R/cmulti.R
-ed270ea0a3d42573e4418ee7e110892a *R/cmulti.fit.R
+54ddccbe6fa531930a0f92bdf8a162f6 *R/cmulti.fit.R
 9e24e7d8512011133c362d1d3af501c9 *R/cmulti.fit0.R
 fd9827016bd8520b9d5a52197617129e *R/cmulti2.fit.R
 ed283ebf655966ebccf3485dcc62f6f2 *R/coef.summary.svabu.R
@@ -82,17 +82,18 @@ fcb3a0d637d7b269a098c100fc598da6 *R/terms.svisit.R
 ac9134195a903a74e3a682214aff2974 *data/databu.rda
 b7cd4bee9b54b8d89e4156a0f45da854 *data/datocc.rda
 32a6ce61300304581480dfcc9bd879e1 *data/oven.rda
-352a1b5e9861bc4b00babd3330ad950f *man/AUC.Rd
+3152fe47f1cc6f8072394a84f4101a11 *inst/WORDLIST
+143ff721a6967147984f3e831ec9270c *man/AUC.Rd
 ee5cdde61f1cad27ff97dc8e58b35f9e *man/bootstrap.Rd
 6dd53513eea9f56e684bb1c5c7155c88 *man/cmulti.Rd
 5dd87cf6ea6cb44274bed0cf4c6ffd2d *man/convertEDR.Rd
 981b6f15d48c965e036fa5ee2fc5c456 *man/databu.Rd
 82f7fb7c27ee60c2f96a7afebffcad7d *man/datocc.Rd
-2bee7dba90e204c7950914dcdca6d648 *man/detect-package.Rd
+91868463bc222a82ea9a817f56cd4400 *man/detect-package.Rd
 b94c799f65d48d1ddabe4cc6e02aa22e *man/hbootindex.Rd
-ca37b1add0f51023fa0b72fd12356a6d *man/internals.Rd
+fc0f4d1999b2f9db4816f8114eb9bcc4 *man/internals.Rd
 646ea3848597b6423398057027189b81 *man/load_BAM_QPAD.Rd
 840d4a6ac275990b05a7b9329173a1ef *man/oven.Rd
-1c746924c07b3f7b52103120f79448ab *man/svabu.Rd
+6fa39dd69a618d2bbcb2acaa0104260d *man/svabu.Rd
 e954efd7bdca853c0f7646842bc54449 *man/svocc.Rd
 0288a051d5661f21921979aefef29ddf *tests/tests.R
