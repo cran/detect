@@ -1,5 +1,5 @@
-7af04e6c63fda4c8f270454ba9fb5415 *DESCRIPTION
-0039420b9172472f0d6bbd98a4c1dba0 *NAMESPACE
+9f8bf540f88a66751a7d2f0cebeabbb0 *DESCRIPTION
+2016894c5972d5085293898acca94478 *NAMESPACE
 807018546fe6993b2269d9ab155ca99e *R/AUC.R
 8ed60b55f56a15d2b344fb7a38360307 *R/AUC.svocc.R
 494d1a00a2c3014eb5fecca88dedf0d4 *R/bootstrap.R
@@ -71,8 +71,8 @@ be64d17b300aa486e50bb1fb3def20ef *R/svabu.fit.R
 adae29e200f36859acfe9494ea24c599 *R/svocc.fit.R
 aa97781c8c025e6453432b7091c2228b *R/svocc.step.R
 fcb3a0d637d7b269a098c100fc598da6 *R/terms.svisit.R
-9f58f4ba8f30b8675071a30212dae625 *R/update.formula.svisit.R
-0b88653dc9ddab3758a2af4c2394c2c1 *R/update.svisit.R
+09910ed529908a7ae64cb9cdf4c9a7c6 *R/update.formula.svisit.R
+f5bc3aaecabb74b091172792006aa980 *R/update.svisit.R
 1a80e3a42040ba831c266efca3414b7b *R/variable.names.svisit.R
 63db98ed8a222844b709ebfed10f0f2c *R/vcov.cmulti.R
 823cb3ac10c5df2fbac704f06806b9ba *R/vcov.svabu.R
