@@ -1,8 +1,8 @@
 Package: detect
 Type: Package
 Title: Analyzing Wildlife Data with Detection Error
-Version: 0.5-0
-Date: 2025-08-31
+Version: 0.5-1
+Date: 2026-01-04
 Authors@R: 
     c(person(given = "Peter",
              family = "Solymos",
@@ -20,7 +20,7 @@ Authors@R:
              role = c("ctb")))
 Maintainer: Peter Solymos <psolymos@gmail.com>
 Depends: R (>= 3.5.0), Formula, stats4, pbapply
-Imports: Matrix, extraDistr
+Imports: Matrix
 Suggests: dclone, dcmle
 Description: Models for analyzing site occupancy and count data models
   with detection error, including 
@@ -32,7 +32,7 @@ Description: Models for analyzing site occupancy and count data models
   (Solymos et al. 2013 <doi:10.1111/2041-210X.12106>,
   Solymos et al. 2018 <doi:10.1650/CONDOR-18-32.1>),
   and single bin QPAD (SQPAD) models
-  (Lele & Solymos 2025).
+  (Lele & Solymos 2025 <doi:10.1093/ornithapp/duaf078>).
   Package development was supported by the
   Alberta Biodiversity Monitoring Institute
   and the Boreal Avian Modelling Project.
@@ -42,11 +42,11 @@ BugReports: https://github.com/psolymos/detect/issues
 LazyLoad: yes
 LazyData: true
 NeedsCompilation: no
-Packaged: 2025-08-31 23:51:10 UTC; Peter
+Packaged: 2026-01-08 10:25:28 UTC; Peter
 Author: Peter Solymos [aut, cre] (ORCID:
     <https://orcid.org/0000-0001-7337-1740>),
   Monica Moreno [aut],
   Subhash R. Lele [aut],
   Steven L. Van Wilgenburg [ctb]
 Repository: CRAN
-Date/Publication: 2025-09-01 08:00:36 UTC
+Date/Publication: 2026-01-08 14:30:02 UTC

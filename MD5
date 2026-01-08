@@ -1,5 +1,5 @@
-b3af6cb29fb7029ae3f175dfbf8bf070 *DESCRIPTION
-7435dd9b15af14b871f36bc70838a007 *NAMESPACE
+2aa8734164c75309eaa4177439388fe1 *DESCRIPTION
+ca890db4f357a7993d7267c6cdee3641 *NAMESPACE
 807018546fe6993b2269d9ab155ca99e *R/AUC.R
 8ed60b55f56a15d2b344fb7a38360307 *R/AUC.svocc.R
 494d1a00a2c3014eb5fecca88dedf0d4 *R/bootstrap.R
@@ -59,7 +59,7 @@ ab6ef26c31e88f30896d2a023b2e39be *R/rocplot.svocc.R
 7e54833201e0055df908664a0c5ec448 *R/simulate.svabu.R
 87052ffffa48cd344ad04f546a130f8a *R/simulate.svocc.R
 7bdabfbfa45b26ae4234dfcce0f353d4 *R/solveneardot.R
-31f34d7160d42ecf06df1d7243dfec8e *R/sqpad.R
+e968324f877b430efe8e46865ae96ed6 *R/sqpad.R
 5b2bef191d0b97cc687fc9c74a8dfc47 *R/summary.cmulti.R
 123e9bd5d3cbb8be063516857ff9bc17 *R/summary.svabu.R
 356ebc57d65b84348f06077bb3bf8454 *R/summary.svocc.R
@@ -85,7 +85,7 @@ b7cd4bee9b54b8d89e4156a0f45da854 *data/datocc.rda
 50d52e79950ac1511ea045c689f13b45 *data/josm.rda
 32a6ce61300304581480dfcc9bd879e1 *data/oven.rda
 0c2c11bfb8331d3a89d9c86e1401837c *data/paired.rda
-87dbcdb033a6afe18d0140322f8d6505 *inst/WORDLIST
+c74b27037cebcb7a07545f446bb2d658 *inst/WORDLIST
 143ff721a6967147984f3e831ec9270c *man/AUC.Rd
 ee5cdde61f1cad27ff97dc8e58b35f9e *man/bootstrap.Rd
 6dd53513eea9f56e684bb1c5c7155c88 *man/cmulti.Rd
@@ -99,7 +99,7 @@ dec9c4ecf03336657351e1913782ebc8 *man/josm.Rd
 646ea3848597b6423398057027189b81 *man/load_BAM_QPAD.Rd
 840d4a6ac275990b05a7b9329173a1ef *man/oven.Rd
 12e30cf00988e9d4b666d81779e1056b *man/paired.Rd
-f3038ca88d68f097dcf781fa6a465339 *man/sqpad.Rd
+e9afa3cc6552e4bf6182ff92e4e9abb8 *man/sqpad.Rd
 6fa39dd69a618d2bbcb2acaa0104260d *man/svabu.Rd
 5b646e3e56676269f73b72524877e522 *man/svocc.Rd
 0288a051d5661f21921979aefef29ddf *tests/tests.R
