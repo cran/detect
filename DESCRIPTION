@@ -1,8 +1,8 @@
 Package: detect
 Type: Package
 Title: Analyzing Wildlife Data with Detection Error
-Version: 0.5-1
-Date: 2026-01-04
+Version: 0.5-2
+Date: 2026-08-31
 Authors@R: 
     c(person(given = "Peter",
              family = "Solymos",
@@ -42,11 +42,11 @@ BugReports: https://github.com/psolymos/detect/issues
 LazyLoad: yes
 LazyData: true
 NeedsCompilation: no
-Packaged: 2026-01-08 10:25:28 UTC; Peter
+Packaged: 2026-09-01 03:39:06 UTC; Peter
 Author: Peter Solymos [aut, cre] (ORCID:
     <https://orcid.org/0000-0001-7337-1740>),
   Monica Moreno [aut],
   Subhash R. Lele [aut],
   Steven L. Van Wilgenburg [ctb]
 Repository: CRAN
-Date/Publication: 2026-01-08 14:30:02 UTC
+Date/Publication: 2026-09-01 07:30:02 UTC
